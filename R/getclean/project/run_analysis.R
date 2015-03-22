@@ -1,6 +1,11 @@
-print("Loading required packages")
+print("Checking for the existance of required packages")
 #This script uses matchcols() function from gdata package and assumes that gdata package is already
 #installed. I am not checking for the existance of the package as it is not a 'rubrics' for evaluation
+if (!"gdata" %in% rownames(installed.packages())) { 
+    print ("Installing 'gdata' package. If necessary, re-run the script after installation.")
+    suppressMessages(suppressWarnings(install.packages("gdata")))
+}
+print ("Loading required packages")
 suppressPackageStartupMessages(expr = require(package = gdata))
 print ("Reading x_test data")
 xtest = read.table("./test/X_test.txt", nrows = 2947,colClasses = "numeric") #Reading test data
@@ -60,4 +65,5 @@ print("Making tidy data")
 #combind both 'average' mean and sd columns,retain'subject' and 
 #'activity' columns from only meancomb
 tidy_data = cbind(meancomb,sdcomb[,-c(1:2)])  
+write.table(x = tidy_data,file = "tidy_data.txt",row.names=FALSE)
 print ("Done!")
