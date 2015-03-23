@@ -3,7 +3,8 @@
 
 ###How the script works?
 
-1. Read test and train data
+1. Download run_analysis.R and run it by making UCI data your working directory
+2. Read test and train data
 2. Read activities and subjects data
 3. Read names of variables measured in test and train data
 4. Label test and train data columns with descriptive variable names
