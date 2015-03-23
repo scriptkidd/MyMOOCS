@@ -1,7 +1,7 @@
-<b> Getting and Cleaning Data Course Project </b>
+# Getting and Cleaning Data Course Project
 
 
-How the script works?
+###How the script works?
 
 1. Read test and train data
 2. Read activities and subjects data
@@ -12,7 +12,7 @@ How the script works?
 7. Extract only those columns with mean and standard deviation in the name
 8. Compute average of each variable for each activity and each subject and write to a csv file
 
-Note:
+####Note:
 
 1. This script works as long as you are in the Samsung data is in your working directory. You can download the data from [here] (https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 2. This script uses matchcols() function from gdata package and assumes that gdata package is already
