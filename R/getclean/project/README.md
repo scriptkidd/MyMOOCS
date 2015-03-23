@@ -17,6 +17,6 @@ Note:
 1. This script works as long as you are in the Samsung data is in your working directory. You can download the data from https://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 2. This script uses matchcols() function from gdata package and assumes that gdata package is already
 installed. I am checking for the existance of the package even though  it is not a 'rubrics' for evaluation.
-<p> If the script throws some unexpected error: </p>
-	<p> a. Use intall.packages("gdata") to install gdata </p>
-	<p> b. Make sure you are in "UCI HAR Dataset" folder </p>
+If the script throws some unexpected error:
+	* a. Use intall.packages("gdata") to install gdata
+	* b. Make sure you are in "UCI HAR Dataset" folder
