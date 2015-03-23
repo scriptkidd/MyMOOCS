@@ -1,3 +1,5 @@
+#Make sure 'UCI HAR Dataset' is your working directory!
+
 print("Checking for the existance of required packages")
 #This script uses matchcols() function from gdata package and assumes that gdata package is already
 #installed. 
