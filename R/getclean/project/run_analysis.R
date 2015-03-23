@@ -1,6 +1,6 @@
 print("Checking for the existance of required packages")
 #This script uses matchcols() function from gdata package and assumes that gdata package is already
-#installed. I am not checking for the existance of the package as it is not a 'rubrics' for evaluation
+#installed. 
 if (!"gdata" %in% rownames(installed.packages())) { 
     print ("Installing 'gdata' package. If necessary, re-run the script after installation.")
     suppressMessages(suppressWarnings(install.packages("gdata")))
