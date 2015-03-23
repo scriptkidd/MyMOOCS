@@ -11,4 +11,4 @@ x_test and x_train data were first merged with the respective activities and sub
 
 Training and the test sets were then merged to create one data set, and only the measurements on the mean and standard deviation for each measurement were extracted.
 
-From this dataset, a second, independent tidy data set with the average of each variable for each activity and each subject were created. Average of mean variables were prefixed with 'MAvg' and of standard deviation were prefixed with 'SDAvg'
+From this dataset, a second, independent tidy data set with the average of each variable for each activity and each subject were created. Average of mean variables were prefixed with 'MAvg' and of standard deviation were prefixed with 'SDAvg'. All but the activity column of this dataset are numeric/integer.
